@@ -1,0 +1,351 @@
+body {
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", YuMincho, "Yu Mincho", 游明朝体, sans-serif;
+  width: 100vm;
+  box-sizing: border-box
+  
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+header {
+  background-image: url(../images/main.png);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 100px;
+  height: 46px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+header h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.open {
+  margin-top: 26px;
+  margin-right: 20px;
+  display: block;
+  font-size: 40px;
+}
+
+#menu {
+  position: absolute;
+  left: -50vw; 
+}
+
+.close {
+  font-size: 40px;
+  position: absolute;
+  right: -500vw;
+}
+
+header ul {
+  position: absolute;
+  right: -1000px;
+  width: 30%;
+  text-align: center;
+  /* visibility: hidden; */
+  font-size: 28px;
+  background: red;
+}
+
+header li {
+  line-height: 34px;
+  padding: 12px 24px;
+  border: 1px solid black;
+  text-decoration: none;
+  /* width: 100%; */
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu:checked ~ .close {
+  position: fixed;
+  top: 1px;
+  right: 1px;
+  /* visibility: visible; */
+  /* margin-left: auto; */
+  background: white;
+  color: black;
+  z-index: 1;
+  transition: 0.2s;
+}
+
+#menu:checked ~ ul {
+  position: fixed;
+  right: 0;
+  /* visibility: visible; */
+  /* margin-left: auto; */
+  background: white;
+  transition: 0.2s;
+}
+
+#menu:checked ~ .open {
+  display: none;
+}
+
+#menu:checked ~ .back {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
+  /* background: blue; */
+}
+
+.info {
+  margin: 56px 20px;
+}
+
+.info h1 {
+  margin-bottom: 38px;
+}
+
+.info-label {
+  display: flex;
+  font-size: 12px;
+  margin-top: 34px;
+}
+
+.info h2 {
+  margin-top: 20px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid black;
+}
+
+.info-icon {
+  padding: 8px 14px;
+  border: 1px solid black;
+  margin-left: 38px;
+}
+
+.info-date {
+  padding: 8px 0;
+}
+
+.ex {
+  margin: 56px 100px;
+  text-align: center;
+}
+
+.ex-img {
+  width: 100%;
+}
+
+.ex h1 {
+  margin-bottom: 30px;
+}
+
+.ex h2 {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.ex p {
+  font-size: 14px;
+  margin: 18px 0;
+}
+
+.more {
+  width:300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.line {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 16px 46px;
+  border: 1px solid black;
+}
+
+.line a {
+  line-height: 50px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.link div {
+  height: 860px
+}
+
+.link1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/company.png");
+  background-size: cover;
+}
+.link2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/recruit.png");
+  background-size: cover;
+}
+.link3 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/contact.png");
+  background-size: cover;
+}
+
+.link a:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 12px;
+  background: black;
+  text-align: center;
+}
+
+footer h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 34px;
+}
+
+footer img {
+  width: 92px;
+}
+
+footer p {
+  font-size: 12px;
+  color: white;
+  margin: 16px 0;
+}
+
+
+@media (min-width: 960px) {
+  header {
+    height: 480px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .open {
+    display: none;
+  }
+
+  header img {
+    width: 140px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+    margin-top: 156px;
+  }
+
+  header ul {
+    display: flex;
+    /* justify-content: end; */
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 18px;
+    width: 600px;
+    margin-top: 40px;
+  }
+
+   header li {
+     border: none;
+     padding: 0 34px;
+     /* width: 500px; */
+   }
+
+   .ex {
+     margin: 56px 0;
+   }
+
+   .ex ul {
+     display: flex;
+   }
+
+   .ex li {
+     margin:92px 36px;
+   }
+
+   .link ul {
+     display: flex;
+     width: 100%;
+     height: auto;
+   }
+
+   .link li {
+    width: calc( 100% / 3 );
+    height: auto;
+    /* width: calc( 100% / 3 ); */
+    /* height: auto; */
+    /* object-fit: cover; */
+    /* height: 330px; */
+   }
+
+   .link div {
+     height: auto;
+    }
+    
+    
+    .link li a {
+      display: block;
+      background-size: cover;
+      height: 330px;
+      /* height: auto; */
+   }
+
+    .footer-wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    .footer-nav {
+      display: flex;
+    }
+
+   footer h2{
+     line-height: 34px;
+     padding: 12px 24px;
+   }
+
+   footer img {
+     width: 92px;
+     height: 38px;
+   }
+
+}
